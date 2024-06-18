@@ -1,0 +1,40 @@
+# 47 - Faça um programa que apresente um menu de opções para o calculo das seguintes operações entre
+# dois números:
+# Adição (opção 1)
+# Subtração (opção 2)
+# Multiplicação (opção 3)
+# Divisão (opção 4)
+# saída (opção 5)
+# o programa deve possibilitar ao usuário a escolha da operação desejada, a exibição do resultado e a volta
+# ao menu de opções. O programa só termina quando for escolhida a opção de saída (opção 5).
+
+print('Adição (opção 1)')
+print('Subtração (opção 2)')
+print('Multiplicação (opção 3)')
+print('Divisão (opção 4)')
+print('saída (opção 5)')
+
+while True:
+    opcao = input('Informe a opção desejada: ')
+
+    if opcao == '5':
+        break
+
+    num1 = float(input('Informe o primeiro número: '))
+    num2 = float(input('Informe o segundo número número: '))
+
+    if opcao == '1':
+        soma = num1 + num2
+        print(f'O resultado da soma de {num1} e {num2} é {soma}')
+
+    elif opcao == '2':
+        subtracao = num1 - num2
+        print(f'o Resultado da subtração de {num1} por {num2} é de {subtracao}')
+
+    elif opcao == '3':
+        multiplicacao = num1 * num2
+        print(f'p resultado da multiplicação de {num1} por {num2} é {multiplicacao}')
+
+    else:
+        divisao = num1 / num2
+        print(f'O resultado da divisão de {num1} por {num2} é de {divisao}')
